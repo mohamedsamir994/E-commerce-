@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- <label for="">Products added </label> -->
+        <button type="button" style="margin-right: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+        <button type="button" style="margin-right: 20px;" class="btn btn-danger" data-toggle="modal" data-target="#cart" id="reset">Reset</button>
+        <!-- <div id="div2">jkk</div> -->
+        <!-- <input type="text" class="form-control" style="width: 15%;" id="product-added"> -->
+
+
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- start slider  -->
+
+      <div class="w3-content w3-display-container">
+        <div class="container images2">
+          <img class="mySlides" src="images/4.jpg" /> 
+        <img class="mySlides" src="images/6.jpg"  />
+        <img class="mySlides" src="images/7.jpg"  />
+        <img class="mySlides" src="images/8.jpg"  />
+        <button
+          onclick="plusDivs(-1)"
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleControls"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          onclick="plusDivs(1)"
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleControls"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+        </div>
+      </div>
+    <!-- end slider  -->
+
+
+<!--  start services  -->
+<div class="services" id="services">
+  <div class="container">
+    <div class="main-heading">
+      <h2 id="Services">Services</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Perspiciatis beatae, maxime Lorem ipsum dolor sit amet consectetur
+      </p>
+    </div>
+    <div class="services-container">
+      <div class="srv-box">
+        <i class="fas fa-desktop fa-3x"></i>
+        <div class="text">
+          <h3>vorem amet inapulation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis beatae, maxime Lorem ipsum dolor sit amet
+            consectetur
+          </p>
+        </div>
+      </div>
+      <div class="srv-box">
+        <i class="fas fa-cog fa-3x"></i>
+        <div class="text">
+          <h3>vorem amet inapulation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis beatae, maxime Lorem ipsum dolor sit amet
+            consectetur
+          </p>
+        </div>
+      </div>
+      <div class="srv-box">
+        <i class="fas fa-pencil-ruler fa-3x"></i>
+        <div class="text">
+          <h3>vorem amet inapulation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis beatae, maxime Lorem ipsum dolor sit amet
+            consectetur
+          </p>
+        </div>
+      </div>
+      <div class="srv-box">
+        <i class="fas fa-camera fa-3x"></i>
+        <div class="text">
+          <h3>vorem amet inapulation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis beatae, maxime Lorem ipsum dolor sit amet
+            consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  end services   -->
+
+
+<!--  start filter   -->
+<div class="filter-box">
+  <a href="#" class="btn btn1 active1" data-filter="all">All</a>
+  <a href="#" class="btn btn1" data-filter="watch">Watch</a>
+  <a href="#" class="btn btn1" data-filter="shirt">Shirt</a>
+  <a href="#" class="btn btn1" data-filter="gown">Gown</a>
+  <a href="#" class="btn btn1" data-filter="jewelry">Jewelry</a>
+</div>
+</div>
+</header>
+
+<main>
+  <div class="slide-container">
+  <section class="container" id="store-products">
+  <div class="store-product watch">
+    <img src="./images/1.png" alt="" />
+    <div class="product-details">
+      <h2>Watch Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product watch">
+    <img src="./images/2.png" alt="" />
+    <div class="product-details">
+      <h2>Watch Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product watch">
+    <img src="./images/13.png" alt="" />
+    <div class="product-details">
+      <h2>Watch Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product shirt">
+    <img src="./images/3.png" alt="" />
+    <div class="product-details">
+      <h2>Shirt Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product shirt">
+    <img src="./images/4.png" alt="" />
+    <div class="product-details">
+      <h2>Shirt Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product shirt">
+    <img src="./images/5.png" alt="" />
+    <div class="product-details">
+      <h2>Shirt Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product gown">
+    <img src="./images/6.png" alt="" />
+    <div class="product-details">
+      <h2>Gown Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product shirt">
+    <img src="./images/7.png" alt="" />
+    <div class="product-details">
+      <h2>Shirt Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product shirt">
+    <img src="./images/8.png" alt="" />
+    <div class="product-details">
+      <h2>Shirt Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product jewelry">
+    <img src="./images/9.png" alt="" />
+    <div class="product-details">
+      <h2>Jewelry Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product jewelry">
+    <img src="./images/10.png" alt="" />
+    <div class="product-details">
+      <h2>Jewelry Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  <div class="store-product jewelry">
+    <img src="./images/11.png" alt="" />
+    <div class="product-details">
+      <h2>Jewelry Product</h2>
+      <p><span>$39.99</span> $29.99</p>
+      <!-- <a class="addTo" href="#">Add to Cart</a> -->
+      <button type="button" class="btn btn-secondary">Add to Cart </button>
+
+    </div>
+  </div>
+  </section>
+  </div>
+</main>
+<!-- end  filter  -->
+
+
+    <!--  start Footer  -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <a class="text-dark" href="#">Nothing.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--  end Footer  -->
+    <script src="main.js"></script>
+  </body>
+</html>

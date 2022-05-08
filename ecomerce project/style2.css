@@ -1,0 +1,82 @@
+:root {
+  --main-color: #19c8fa;
+  --transperent-color: rgb(15 116 143 / 50%);
+  --section-padding: 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* start design  */
+.design {
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  height: 600px;
+  position: relative;
+  background-image: url("images/mountain2.jpg");
+  background-color: #777;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.design::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(0 0 0/ 60%);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.design .image,
+.design .text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+.design .image {
+  text-align: center;
+}
+.design .image img {
+  position: relative;
+  height: 364px;
+  bottom: -126px;
+}
+@media (max-width: 767px) {
+  .design .image {
+    display: none;
+  }
+}
+
+.design .text {
+  padding: 50px;
+  color: white;
+  background-color: var(--transperent-color);
+}
+
+.design .text h2 {
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.design .text ul li {
+  padding: 15px 0;
+}
+
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 15px;
+  position: relative;
+  top: 1px;
+}
+
+/* end design   */
